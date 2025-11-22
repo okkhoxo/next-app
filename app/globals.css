@@ -3,6 +3,8 @@
 @theme {
   --color-background: #0a0a0a;
   --color-foreground: #ededed;
+  --font-display: var(--font-gugi);
+  --font-sans: var(--font-noto-sans-kr);
 }
 
 :root {
@@ -13,7 +15,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
   overflow-x: hidden;
 }
 
