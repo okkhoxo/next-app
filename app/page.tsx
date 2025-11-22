@@ -3,13 +3,16 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Globe, Shield } from 'lucide-react';
 
+import Scene from '../components/Scene';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden selection:bg-purple-500 selection:text-white font-sans">
       {/* Background Elements */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-900/20 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-900/20 rounded-full blur-[120px] animate-pulse delay-1000" />
+      <div className="fixed inset-0 z-0">
+        <Scene />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-900/20 rounded-full blur-[120px] animate-pulse pointer-events-none" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-900/20 rounded-full blur-[120px] animate-pulse delay-1000 pointer-events-none" />
       </div>
 
       {/* Navbar */}
