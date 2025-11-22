@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, Globe, Shield } from 'lucide-react';
+import { ArrowRight, Zap, Globe, Shield, Cpu, Palette, Sparkles, Calendar } from 'lucide-react';
 
 import Scene from '../components/Scene';
 
@@ -23,7 +23,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold tracking-tighter font-display text-neon"
         >
-          네오<span className="text-purple-500">버스</span>
+          NEANDER
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
@@ -31,9 +31,9 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="hidden md:flex space-x-8 text-lg font-medium text-gray-300"
         >
-          <a href="#" className="hover:text-white hover:text-neon transition-colors">기능</a>
-          <a href="#" className="hover:text-white hover:text-neon transition-colors">가격</a>
-          <a href="#" className="hover:text-white hover:text-neon transition-colors">소개</a>
+          <a href="#" className="hover:text-white hover:text-neon transition-colors">B2B 솔루션</a>
+          <a href="#" className="hover:text-white hover:text-neon transition-colors">AC'SCENT</a>
+          <a href="#" className="hover:text-white hover:text-neon transition-colors">문의하기</a>
         </motion.div>
         <motion.button
           initial={{ opacity: 0, scale: 0.9 }}
@@ -54,7 +54,7 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <span className="px-4 py-2 text-sm font-bold text-purple-300 bg-purple-900/30 rounded-full border border-purple-700/50 font-display tracking-wider">
-            v2.0 정식 출시
+            새로운 비즈니스를 구현합니다
           </span>
         </motion.div>
 
@@ -64,9 +64,9 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-8 text-7xl md:text-9xl font-extrabold tracking-tight leading-tight font-display"
         >
-          불가능을 <br />
+          기술, 예술, <br />
           <span className="text-gradient text-neon">
-            현실로
+            향기의 융합
           </span>
         </motion.h1>
 
@@ -76,8 +76,8 @@ export default function Home() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-8 max-w-2xl text-xl md:text-2xl text-gray-300 break-keep font-light"
         >
-          최첨단 플랫폼으로 웹 개발의 미래를 경험하세요.
-          빠르고, 안전하며, 압도적으로 아름답습니다.
+          AI, Media Art, Event, Scent를 통한 혁신적인 감각 경험.
+          네안데르는 감각의 경계를 넘어 독보적인 경험을 구현합니다.
         </motion.p>
 
         <motion.div
@@ -87,22 +87,23 @@ export default function Home() {
           className="mt-12 flex flex-col sm:flex-row gap-6"
         >
           <button className="group relative px-10 py-5 text-xl font-bold text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all shadow-[0_0_40px_-10px_rgba(168,85,247,0.5)] hover:shadow-[0_0_60px_-15px_rgba(168,85,247,0.8)] font-display">
-            무료로 시작하기
+            솔루션 보기
             <ArrowRight className="inline-block ml-2 w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </button>
           <button className="px-10 py-5 text-xl font-bold text-white rounded-full border-2 border-gray-700 hover:bg-gray-900 hover:border-purple-500 transition-all font-display">
-            문서 보기
+            문의하기
           </button>
         </motion.div>
       </section>
 
       {/* Features Grid */}
       <section className="relative z-10 py-20 px-6 md:px-12 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: Zap, title: "압도적인 속도", desc: "엣지 컴퓨팅 기술로 최적화된 성능을 제공합니다." },
-            { icon: Shield, title: "철통같은 보안", desc: "엔터프라이즈급 데이터 보호 시스템을 갖췄습니다." },
-            { icon: Globe, title: "글로벌 스케일", desc: "전 세계 35개 이상의 리전에 즉시 배포하세요." }
+            { icon: Cpu, title: "AI Solutions", desc: "개인 이미지 분석을 통한 향기 추천 및 AI 챗봇 기반 성향 분석." },
+            { icon: Palette, title: "Media Art", desc: "미디어아트 전시, 프로젝션 맵핑, 상설 전시관 운영." },
+            { icon: Calendar, title: "Event Design", desc: "아티스트 팝업, 기념 이벤트 등 독창적이고 몰입감 있는 경험 설계." },
+            { icon: Sparkles, title: "Scent Tech", desc: "콘서트 향 설계, 작품 기반 향 개발 및 후각적 브랜딩 구현." }
           ].map((feature, index) => (
             <motion.div
               key={index}
