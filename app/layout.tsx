@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Gugi, Noto_Sans_KR } from "next/font/google";
+import { Kirang_Haerang, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 
-const gugi = Gugi({
+const kirangHaerang = Kirang_Haerang({
   weight: "400",
-  variable: "--font-gugi",
+  variable: "--font-kirang",
   subsets: ["latin"],
 });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`${gugi.variable} ${notoSansKr.variable} antialiased font-sans`}
+        className={`${kirangHaerang.variable} ${notoSansKr.variable} antialiased font-sans`}
       >
         {children}
       </body>
