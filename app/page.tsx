@@ -47,11 +47,12 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] px-4 text-center">
+      <section className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] px-4 text-center pointer-events-none">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="pointer-events-auto"
         >
           <span className="px-4 py-2 text-sm font-bold text-purple-300 bg-purple-900/30 rounded-full border border-purple-700/50 font-display tracking-wider">
             새로운 비즈니스를 구현합니다
@@ -62,7 +63,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-8 text-7xl md:text-9xl font-extrabold tracking-tight leading-tight font-display"
+          className="mt-8 text-7xl md:text-9xl font-extrabold tracking-tight leading-tight font-display pointer-events-auto"
         >
           기술, 예술, <br />
           <span className="text-gradient text-neon">
@@ -74,7 +75,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-8 max-w-2xl text-xl md:text-2xl text-gray-300 break-keep font-light"
+          className="mt-8 max-w-2xl text-xl md:text-2xl text-gray-300 break-keep font-light pointer-events-auto"
         >
           AI, Media Art, Event, Scent를 통한 혁신적인 감각 경험.
           네안데르는 감각의 경계를 넘어 독보적인 경험을 구현합니다.
@@ -84,7 +85,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-12 flex flex-col sm:flex-row gap-6"
+          className="mt-12 flex flex-col sm:flex-row gap-6 pointer-events-auto"
         >
           <button className="group relative px-10 py-5 text-xl font-bold text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transition-all shadow-[0_0_40px_-10px_rgba(168,85,247,0.5)] hover:shadow-[0_0_60px_-15px_rgba(168,85,247,0.8)] font-display">
             솔루션 보기
